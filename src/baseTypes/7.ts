@@ -15,11 +15,11 @@ enum daysOfWeek {
 
 function isWeekend(day: daysOfWeek): boolean {
   return day === daysOfWeek.Saturday || day === daysOfWeek.Sunday
-    ? false
-    : true;
+    ? true
+    : false;
 }
 
-console.log("It's a day off?", isWeekend(daysOfWeek.Saturday)); // false
-console.log("It's a day off?", isWeekend(daysOfWeek.Sunday)); // false
-console.log("It's a day off?", isWeekend(daysOfWeek.Thursday)); // true
-console.log("It's a day off?", isWeekend(daysOfWeek.Friday)); // true
+console.log("It's a day off?", isWeekend(daysOfWeek.Saturday)); // true
+console.log("It's a day off?", isWeekend(daysOfWeek.Sunday)); // true
+console.log("It's a day off?", isWeekend(daysOfWeek.Thursday)); // false
+console.log("It's a day off?", isWeekend(daysOfWeek.Friday)); // false
