@@ -15,5 +15,3 @@ getPromise().then((data) => {
 
 export {};
 
-type MyType = { [key: string]: number };
-let obj: MyType = { one: 1, two: 2, three: "three" };
